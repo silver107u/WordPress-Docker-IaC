@@ -1,1 +1,12 @@
 version: '3'
+services:
+        dbos:
+                image: mysql:5.7
+                volumes:
+                        - mysql_drive:/var/lib/mysql
+                environment:
+                        MYSQL_ROOT_PASSWORD: root
+                        MYSQL_USER: ayush
+                        MYSQL_PASSWORD: redhat
+                        MYSQL_DATABASE: mydb
+                restart: always
