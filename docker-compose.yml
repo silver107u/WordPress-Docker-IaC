@@ -25,3 +25,7 @@ services:
                        
                 volumes:
                         - wordpress_drive:/var/www/html
+volumes:
+        wordpress_drive:
+        mysql_drive:        
+
